@@ -1,9 +1,11 @@
 package com.example.ekk2
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -112,9 +114,12 @@ class RecipeListFragment : Fragment() {
                             Button(
                                 //modifier = Modifier
                                     //.weight(1f),
-                                onClick = { showContent = !showContent }) {
+                                onClick = { showContent = !showContent;
+                                    Log.d("Auth:Auth:", "Auth: true")
+                                }) {
                                 Text(
                                     "Click me"
+
                                 )
                             }
 
